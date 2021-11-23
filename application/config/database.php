@@ -79,7 +79,7 @@ $db['default'] = array(
 	'username' => 'dvayrtltheldrc',
 	'password' => 'ac776490cbdebed985af88ea7e8700e736f96b3c33066355a164287717f0e9e8',
 	'database' => 'devfgveer8s4sj',
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
