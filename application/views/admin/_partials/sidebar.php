@@ -33,8 +33,8 @@
 		<div id="collapsePesanan" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Jenis Pesanan:</h6>
-				<a class="collapse-item" href="<?php echo site_url('admin/pesananmasuk') ?>">Pesanan Masuk</a>
-				<a class="collapse-item" id="pesananKeluar" href="<?php echo site_url('admin/pesanankeluar') ?>">Pesanan Keluar</a>
+				<a class="collapse-item" href="<?php echo site_url('admin/pesananMasuk') ?>">Pesanan Masuk</a>
+				<a class="collapse-item" id="pesananKeluar" href="<?php echo site_url('admin/pesananKeluar') ?>">Pesanan Keluar</a>
 			</div>
 		</div>
 	</li>

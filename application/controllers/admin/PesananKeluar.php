@@ -6,13 +6,13 @@ class PesananKeluar extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model("pesanankeluar_model");
+		$this->load->model("PesananKeluar_model");
 		if($this->login_model->tidakMasuk()) redirect(site_url('admin/login'));
 	}
 
 	public function index()
 	{
-		$data["pesanankeluar"] = $this->pesanankeluar_model->lihat();
+		$data["PesananKeluar"] = $this->PesananKeluar_model->lihat();
 		$this->load->view("admin/pesanan_keluar/pesanan_keluar", $data);
 	}
 
@@ -56,7 +56,7 @@ class PesananKeluar extends CI_Controller
 	}
 
 	public function hari30(){
-		$data["pesanankeluar"] = $this->pesanankeluar_model->hari30();
+		$data["PesananKeluar"] = $this->PesananKeluar_model->hari30();
 		$this->load->view("admin/pesanan_keluar/pesanan_keluar", $data);
 	}
 

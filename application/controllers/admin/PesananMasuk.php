@@ -6,13 +6,13 @@ class PesananMasuk extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model("pesananmasuk_model");
+		$this->load->model("PesananMasuk_model");
 		if($this->login_model->tidakMasuk()) redirect(site_url('admin/login'));
 	}
 
 	public function index()
 	{
-		$data["pesananmasuk"] = $this->pesananmasuk_model->lihat();
+		$data["PesananMasuk"] = $this->PesananMasuk_model->lihat();
 		$this->load->view("admin/pesanan_masuk/pesanan_masuk", $data);
 	}
 
@@ -56,7 +56,7 @@ class PesananMasuk extends CI_Controller
 	}
 
 	public function hari30(){
-		$data["pesananmasuk"] = $this->pesananmasuk_model->hari30();
+		$data["PesananMasuk"] = $this->PesananMasuk_model->hari30();
 		$this->load->view("admin/pesanan_masuk/pesanan_masuk", $data);
 	}
 

@@ -39,7 +39,7 @@
 										<div class="text-s font-weight-bold text-danger text-uppercase mb-1">
 											Pesanan Masuk</div>
 										<div class="h5 mb-0 font-weight-bold text-gray-800">
-											<?php echo $pesananmasuk." Paket" ?>
+											<?php echo $pesananMasuk." Paket" ?>
 										</div>
 									</div>
 									<div class="col-auto">
@@ -58,7 +58,7 @@
 										<div class="text-s font-weight-bold text-success text-uppercase mb-1">
 											Pesanan Keluar</div>
 										<div class="h5 mb-0 font-weight-bold text-gray-800">
-											<?php echo $pesanankeluar." Paket" ?>
+											<?php echo $pesananKeluar." Paket" ?>
 										</div>
 									</div>
 									<div class="col-auto">
