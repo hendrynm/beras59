@@ -51,22 +51,22 @@
 										<?php echo $pk->id_pesanan?>
 									</td>
 									<td>
-										<?php echo $pk->kodeBarang?>
+										<?php echo $pk->kodebarang?>
 									</td>
 									<td>
-										<?php echo $pk->namaBarang?>
+										<?php echo $pk->namabarang?>
 									</td>
 									<td>
-										<?php echo date_format(date_create($pk->tanggalPesananKeluar),"d-m-Y")?>
+										<?php echo date_format(date_create($pk->tanggalpesanankeluar),"d-m-Y")?>
 									</td>
 									<td>
-										Rp<?php echo number_format($pk->biayaKirimPesananKeluar,0,",",".")?>
+										Rp<?php echo number_format($pk->biayakirimpesanankeluar,0,",",".")?>
 									</td>
 									<td>
-										<?php echo $pk->beratPesananKeluar?>
+										<?php echo $pk->beratpesanankeluar?>
 									</td>
 									<td>
-										<?php echo $pk->alamatKirimPesananKeluar?>
+										<?php echo $pk->alamatkirimpesanankeluar?>
 									</td>
 									<!-- Aksi belum jadi -->
 									<td class="aksi">

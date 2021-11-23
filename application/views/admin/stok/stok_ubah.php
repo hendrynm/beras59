@@ -1,5 +1,5 @@
 <?php
-if ($this->session->userdata('bagianAsisten') == "Pelayanan") redirect('admin');
+if ($this->session->userdata('bagianasisten') == "Pelayanan") redirect('admin');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,41 +26,41 @@ if ($this->session->userdata('bagianAsisten') == "Pelayanan") redirect('admin');
 				</div>
 				<div class="card-body shadow">
 					<form action="" class="" method="post">
-						<input type="hidden" name="kodeBarang" value="<?php echo $stok->kodeBarang ?>">
+						<input type="hidden" name="kodeBarang" value="<?php echo $stok->kodebarang ?>">
 						<div class="form-group row">
 							<label for="kodeBarang" class="text-dark text-left col-md-2">Kode Barang</label>
 							<input class="form-control col-md-2" type="text"
-								   name="kodeBarang" value="<?php echo $stok->kodeBarang ?>" disabled="disabled">
+								   name="kodeBarang" value="<?php echo $stok->kodebarang ?>" disabled="disabled">
 						</div>
 						<div class="form-group row">
 							<label for="namaBarang" class="text-dark text-left col-md-2">Nama Barang</label>
 							<input class="form-control col-md-8" type="text"
-								   name="namaBarang" value="<?php echo $stok->namaBarang ?>">
+								   name="namaBarang" value="<?php echo $stok->namabarang ?>">
 						</div>
 						<div class="form-group row">
 							<label for="beratBarang" class="text-dark text-left col-md-2">Berat (kg)</label>
 							<input class="form-control col-md-1" type="number" min="0"
-								   name="beratBarang" value="<?php echo $stok->beratBarang ?>">
+								   name="beratBarang" value="<?php echo $stok->beratbarang ?>">
 						</div>
 						<div class="form-group row">
 							<label for="hargaBeli" class="text-dark text-left col-md-2">Harga Beli (Rp)</label>
 							<input class="form-control col-md-2" type="text"
-								   name="hargaBeli" value="<?php echo $stok->hargaBeli ?>">
+								   name="hargaBeli" value="<?php echo $stok->hargabeli ?>">
 						</div>
 						<div class="form-group row">
 							<label for="hargaJual" class="text-dark text-left col-md-2">Harga Jual (Rp)</label>
 							<input class="form-control col-md-2" type="text"
-								   name="hargaJual" value="<?php echo $stok->hargaJual ?>">
+								   name="hargaJual" value="<?php echo $stok->hargajual ?>">
 						</div>
 						<div class="form-group row">
 							<label for="diskonBarang" class="text-dark text-left col-md-2">Diskon (Rp)</label>
 							<input class="form-control col-md-2" type="text"
-								   name="diskonBarang" value="<?php echo $stok->diskonBarang ?>">
+								   name="diskonBarang" value="<?php echo $stok->diskonbarang ?>">
 						</div>
 						<div class="form-group row">
 							<label for="sisaBarang" class="text-dark text-left col-md-2">Sisa Barang</label>
 							<input class="form-control col-md-1" type="number" min="0"
-								   name="sisaBarang" value="<?php echo $stok->sisaBarang ?>">
+								   name="sisaBarang" value="<?php echo $stok->sisabarang ?>">
 						</div>
 						<div class="form-group row">
 							<label for="id_pemasok" class="text-dark text-left col-md-2">Kode Pemasok</label>

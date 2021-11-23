@@ -39,16 +39,16 @@
 							<?php foreach ($kedaluwarsa as $kedaluwarsa): ?>
 								<tr>
 									<td>
-										<?php echo $kedaluwarsa->kodeBarang?>
+										<?php echo $kedaluwarsa->kodebarang?>
 									</td>
 									<td>
-										<?php echo date_format(date_create($kedaluwarsa->tanggalStok),"d-m-Y")?>
+										<?php echo date_format(date_create($kedaluwarsa->tanggalstok),"d-m-Y")?>
 									</td>
 									<td>
-										<?php echo date_format(date_create($kedaluwarsa->tanggalProduksi),"d-m-Y")?>
+										<?php echo date_format(date_create($kedaluwarsa->tanggalproduksi),"d-m-Y")?>
 									</td>
 									<td>
-										<?php echo date_format(date_create($kedaluwarsa->tanggalKedaluwarsa),"d-m-Y")?>
+										<?php echo date_format(date_create($kedaluwarsa->tanggalkedaluwarsa),"d-m-Y")?>
 									</td>
 									<!-- Aksi belum jadi -->
 									<td class="aksiKedaluwarsa">

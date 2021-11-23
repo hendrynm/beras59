@@ -9,7 +9,7 @@
 
 <!-- Menghilangkan menu dari Sidebar -->
 <script>
-	<?php if($this->session->userdata('bagianAsisten') != "Pemilik"): ?>
+	<?php if($this->session->userdata('bagianasisten') != "Pemilik"): ?>
 	$(document).ready(function(){
 		$("#kelolaToko").remove();
 		$("#kelolaPemasok").remove();
@@ -17,7 +17,7 @@
 	});
 	<?php endif;?>
 
-	<?php if($this->session->userdata('bagianAsisten') == "Pelayanan"): ?>
+	<?php if($this->session->userdata('bagianasisten') == "Pelayanan"): ?>
 	$(document).ready(function(){
 		$("#keuangan").remove();
 		$(".aksiKeuangan").remove();
@@ -26,7 +26,7 @@
 	});
 	<?php endif;?>
 
-	<?php if($this->session->userdata('bagianAsisten') == "Operasional"): ?>
+	<?php if($this->session->userdata('bagianasisten') == "Operasional"): ?>
 	$(document).ready(function(){
 		$("#keuangan").remove();
 		$("#pesananKeluar").remove();
@@ -34,7 +34,7 @@
 	});
 	<?php endif;?>
 
-	<?php if($this->session->userdata('bagianAsisten') == "Keuangan"): ?>
+	<?php if($this->session->userdata('bagianasisten') == "Keuangan"): ?>
 	$(document).ready(function(){
 		$("#pesanan").remove();
 		$("#gudang").remove();

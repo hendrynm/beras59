@@ -44,16 +44,16 @@
 										<?php echo $asisten->id_asisten?>
 									</td>
 									<td>
-										<?php echo $asisten->namaAsisten?>
+										<?php echo $asisten->namaasisten?>
 									</td>
 									<td>
-										<?php echo $asisten->alamatAsisten?>
+										<?php echo $asisten->alamatasisten?>
 									</td>
 									<td>
-										<?php echo $asisten->kontakAsisten?>
+										<?php echo $asisten->kontakasisten?>
 									</td>
 									<td>
-										<?php echo $asisten->bagianAsisten?>
+										<?php echo $asisten->bagianasisten?>
 									</td>
 									<td class="aksiAsisten">
 										<a href="<?php echo

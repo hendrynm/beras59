@@ -48,13 +48,13 @@
 										<?php echo $pengeluaran->id_pengeluaran?>
 									</td>
 									<td>
-										<?php echo $pengeluaran->namaPengeluaran?>
+										<?php echo $pengeluaran->namapengeluaran?>
 									</td>
 									<td>
-										<?php echo date_format(date_create($pengeluaran->tanggalPengeluaran),"d-m-Y")?>
+										<?php echo date_format(date_create($pengeluaran->tanggalpengeluaran),"d-m-Y")?>
 									</td>
 									<td>
-										Rp<?php echo number_format($pengeluaran->jumlahPengeluaran,0,",",".")?>
+										Rp<?php echo number_format($pengeluaran->jumlahpengeluaran,0,",",".")?>
 									</td>
 									<!-- Aksi belum jadi -->
 									<td class="aksi">

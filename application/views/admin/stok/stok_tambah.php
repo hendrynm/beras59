@@ -1,5 +1,5 @@
 <?php
-if ($this->session->userdata('bagianAsisten') == "Pelayanan") redirect('admin');
+if ($this->session->userdata('bagianasisten') == "Pelayanan") redirect('admin');
 ?>
 <!DOCTYPE html>
 <html lang="en">

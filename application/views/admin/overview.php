@@ -14,11 +14,11 @@
 
 				<div class="d-sm-flex align-items-center justify-content-between mb-4">
 					<h1 class="h2 mb-0 text-gray-800">Selamat Datang <br>
-					<b><?php echo $this->session->userdata('namaAsisten'); ?></b></h1>
+					<b><?php echo $this->session->userdata('namaasisten'); ?></b></h1>
 					<div class="mt-1 form-group align-content-end">
 						<span class="font-weight-bold">Hak Akses: </span>
 						<p class="text-primary font-weight-bold">
-							<?php echo $this->session->userdata('bagianAsisten'); ?></p>
+							<?php echo $this->session->userdata('bagianasisten'); ?></p>
 					</div>
 				</div>
 
@@ -39,7 +39,7 @@
 										<div class="text-s font-weight-bold text-danger text-uppercase mb-1">
 											Pesanan Masuk</div>
 										<div class="h5 mb-0 font-weight-bold text-gray-800">
-											<?php echo $pesananMasuk." Paket" ?>
+											<?php echo $pesananmasuk." Paket" ?>
 										</div>
 									</div>
 									<div class="col-auto">
@@ -58,7 +58,7 @@
 										<div class="text-s font-weight-bold text-success text-uppercase mb-1">
 											Pesanan Keluar</div>
 										<div class="h5 mb-0 font-weight-bold text-gray-800">
-											<?php echo $pesananKeluar." Paket" ?>
+											<?php echo $pesanankeluar." Paket" ?>
 										</div>
 									</div>
 									<div class="col-auto">
@@ -78,7 +78,7 @@
 											Pemasukan</div>
 										<div class="h5 mb-0 font-weight-bold text-gray-800">
 											<?php
-											$uangMasuk = $pemasukan->jumlahPemasukan;
+											$uangMasuk = $pemasukan->jumlahpemasukan;
 											echo "Rp".number_format($uangMasuk,0,",",".");
 											?>
 										</div>
@@ -100,7 +100,7 @@
 											Pengeluaran</div>
 										<div class="h5 mb-0 font-weight-bold text-gray-800">
 											<?php
-											$uangKeluar = $pengeluaran->jumlahPengeluaran;
+											$uangKeluar = $pengeluaran->jumlahpengeluaran;
 											echo "Rp".number_format($uangKeluar,0,",",".");
 											?>
 										</div>

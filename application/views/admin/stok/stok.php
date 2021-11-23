@@ -1,5 +1,5 @@
 <?php
-if ($this->session->userdata('bagianAsisten') == "Keuangan") redirect('admin');
+if ($this->session->userdata('bagianasisten') == "Keuangan") redirect('admin');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,39 +46,39 @@ if ($this->session->userdata('bagianAsisten') == "Keuangan") redirect('admin');
 								<?php foreach ($stok as $stok): ?>
 								<tr>
 									<td>
-										<?php echo $stok->kodeBarang?>
+										<?php echo $stok->kodebarang?>
 									</td>
 									<td>
-										<?php echo $stok->namaBarang?>
+										<?php echo $stok->namabarang?>
 									</td>
 									<td>
-										<?php echo $stok->beratBarang?> kg
+										<?php echo $stok->beratbarang?> kg
 									</td>
 									<td>
-										Rp<?php echo number_format($stok->hargaBeli,0,",",".")?>
+										Rp<?php echo number_format($stok->hargabeli,0,",",".")?>
 									</td>
 									<td>
-										Rp<?php echo number_format($stok->hargaJual,0,",",".")?>
+										Rp<?php echo number_format($stok->hargajual,0,",",".")?>
 									</td>
 									<td>
-										Rp<?php echo number_format($stok->pajakBarang,0,",",".")?>
+										Rp<?php echo number_format($stok->pajakbarang,0,",",".")?>
 									</td>
 									<td>
-										Rp<?php echo number_format($stok->diskonBarang,0,",",".")?>
+										Rp<?php echo number_format($stok->diskonbarang,0,",",".")?>
 									</td>
 									<td>
-										<?php echo $stok->sisaBarang?>
+										<?php echo $stok->sisabarang?>
 									</td>
 									<td>
 										<?php echo $stok->id_pemasok?>
 									</td>
 									<td class="aksiStok">
 										<a href="<?php echo
-										site_url('admin/stok/ubah/'.$stok->kodeBarang) ?>"
+										site_url('admin/stok/ubah/'.$stok->kodebarang) ?>"
 										   class="btn-small text-primary text-decoration-none">
 											<i class="fas fa-edit"></i> Ubah</a>
 										<a onclick="deleteConfirm('<?php echo
-										site_url('admin/stok/hapus/'.$stok->kodeBarang) ?>')"
+										site_url('admin/stok/hapus/'.$stok->kodebarang) ?>')"
 										   href="#!" class="btn-small text-danger text-decoration-none">
 											<i class="fas fa-trash"></i> Hapus</a>
 									</td>

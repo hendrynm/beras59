@@ -48,13 +48,13 @@
 										<?php echo $pemasukan->id_pemasukan?>
 									</td>
 									<td>
-										<?php echo $pemasukan->namaPemasukan?>
+										<?php echo $pemasukan->namapemasukan?>
 									</td>
 									<td>
-										<?php echo date_format(date_create($pemasukan->tanggalPemasukan),"d-m-Y")?>
+										<?php echo date_format(date_create($pemasukan->tanggalpemasukan),"d-m-Y")?>
 									</td>
 									<td>
-										Rp<?php echo number_format($pemasukan->jumlahPemasukan,0,",",".")?>
+										Rp<?php echo number_format($pemasukan->jumlahpemasukan,0,",",".")?>
 									</td>
 									<!-- Aksi belum jadi -->
 									<td class="aksi">

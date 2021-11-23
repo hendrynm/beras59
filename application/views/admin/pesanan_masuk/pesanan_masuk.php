@@ -51,22 +51,22 @@
 										<?php echo $pm->id_pesanan?>
 									</td>
 									<td>
-										<?php echo $pm->kodeBarang?>
+										<?php echo $pm->kodebarang?>
 									</td>
 									<td>
-										<?php echo $pm->namaBarang?>
+										<?php echo $pm->namabarang?>
 									</td>
 									<td>
-										<?php echo date_format(date_create($pm->tanggalPesananMasuk),"d-m-Y")?>
+										<?php echo date_format(date_create($pm->tanggalpesananmasuk),"d-m-Y")?>
 									</td>
 									<td>
-										Rp<?php echo number_format($pm->hargaJualPesananMasuk,0,",",".")?>
+										Rp<?php echo number_format($pm->hargajualpesananmasuk,0,",",".")?>
 									</td>
 									<td>
-										<?php echo $pm->kuantitasPesananMasuk?>
+										<?php echo $pm->kuantitaspesananmasuk?>
 									</td>
 									<td>
-										Rp<?php echo number_format($pm->hargaTotalPesananMasuk,0,",",".")?>
+										Rp<?php echo number_format($pm->hargatotalpesananmasuk,0,",",".")?>
 									</td>
 									<!-- Aksi belum jadi -->
 									<td class="aksiPesananMasuk">

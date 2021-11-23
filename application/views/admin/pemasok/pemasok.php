@@ -1,5 +1,5 @@
 <?php
-if ($this->session->userdata('bagianAsisten') != "Pemilik") redirect('admin');
+if ($this->session->userdata('bagianasisten') != "Pemilik") redirect('admin');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,13 +45,13 @@ if ($this->session->userdata('bagianAsisten') != "Pemilik") redirect('admin');
 										<?php echo $pemasok->id_pemasok?>
 									</td>
 									<td>
-										<?php echo $pemasok->namaPemasok?>
+										<?php echo $pemasok->namapemasok?>
 									</td>
 									<td>
-										<?php echo $pemasok->alamatPemasok?>
+										<?php echo $pemasok->alamatpemasok?>
 									</td>
 									<td>
-										<?php echo $pemasok->kontakPemasok?>
+										<?php echo $pemasok->kontakpemasok?>
 									</td>
 									<!-- Aksi belum jadi -->
 									<td class="aksi">

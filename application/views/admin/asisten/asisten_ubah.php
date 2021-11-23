@@ -1,5 +1,5 @@
 <?php
-if ($this->session->userdata('bagianAsisten') != "Pemilik") redirect('admin');
+if ($this->session->userdata('bagianasisten') != "Pemilik") redirect('admin');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,17 +35,17 @@ if ($this->session->userdata('bagianAsisten') != "Pemilik") redirect('admin');
 						<div class="form-group row">
 							<label for="namaAsisten" class="text-dark text-left col-md-2">Nama</label>
 							<input class="form-control col-md-8" type="text"
-								   name="namaAsisten" value="<?php echo $asisten->namaAsisten ?>">
+								   name="namaAsisten" value="<?php echo $asisten->namaasisten ?>">
 						</div>
 						<div class="form-group row">
 							<label for="alamatAsisten" class="text-dark text-left col-md-2">Alamt</label>
 							<input class="form-control col-md-2" type="text"
-								   name="alamatAsisten" value="<?php echo $asisten->alamatAsisten ?>">
+								   name="alamatAsisten" value="<?php echo $asisten->alamatasisten ?>">
 						</div>
 						<div class="form-group row">
 							<label for="kontakAsisten" class="text-dark text-left col-md-2">Kontak</label>
 							<input class="form-control col-md-2" type="text"
-								   name="kontakAsisten" value="<?php echo $asisten->kontakAsisten ?>">
+								   name="kontakAsisten" value="<?php echo $asisten->kontakasisten ?>">
 						</div>
 						<div class="form-group row">
 							<label for="bagianAsisten" class="text-dark text-left col-md-2">Bagian Asisten</label>
