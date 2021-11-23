@@ -23,41 +23,41 @@ class Stok_model extends CI_Model
 
 	public function getById($kodeBarang)
 	{
-		return $this->db->get_where($this->_table, ["kodeBarang" => $kodeBarang])->row();
+		return $this->db->get_where($this->_table, ["kodebarang" => $kodeBarang])->row();
 	}
 
 	public function tambah()
 	{
 		$post = $this->input->post();
-		$this->kodeBarang = strtoupper($post["kodeBarang"]);
-		$this->namaBarang = $post["namaBarang"];
-		$this->beratBarang = $post["beratBarang"];
+		$this->kodebarang = strtoupper($post["kodeBarang"]);
+		$this->namabarang = $post["namaBarang"];
+		$this->beratbarang = $post["beratBarang"];
 		$this->id_pemasok = $post["id_pemasok"];
-		$this->hargaBeli = $post["hargaBeli"];
-		$this->hargaJual = $post["hargaJual"];
-		$this->pajakBarang = ($post["hargaJual"])*0.1;
-		$this->diskonBarang = $post["diskonBarang"];
-		$this->sisaBarang = $post["sisaBarang"];
+		$this->hargabeli = $post["hargaBeli"];
+		$this->hargajual = $post["hargaJual"];
+		$this->pajakbarang = ($post["hargaJual"])*0.1;
+		$this->diskonbarang = $post["diskonBarang"];
+		$this->sisabarang = $post["sisaBarang"];
 		return $this->db->insert($this->_table, $this);
 	}
 
 	public function ubah()
 	{
 		$post = $this->input->post();
-		$this->kodeBarang = $post["kodeBarang"];
-		$this->namaBarang = $post["namaBarang"];
-		$this->beratBarang = $post["beratBarang"];
+		$this->kodebarang = $post["kodeBarang"];
+		$this->namabarang = $post["namaBarang"];
+		$this->beratbarang = $post["beratBarang"];
 		$this->id_pemasok = $post["id_pemasok"];
-		$this->hargaBeli = $post["hargaBeli"];
-		$this->hargaJual = $post["hargaJual"];
-		$this->pajakBarang = ($post["hargaJual"])*0.1;
-		$this->diskonBarang = $post["diskonBarang"];
-		$this->sisaBarang = $post["sisaBarang"];
-		return $this->db->update($this->_table, $this, array('kodeBarang' => $post['kodeBarang']));
+		$this->hargabeli = $post["hargaBeli"];
+		$this->hargajual = $post["hargaJual"];
+		$this->pajakbarang = ($post["hargaJual"])*0.1;
+		$this->diskonbarang = $post["diskonBarang"];
+		$this->sisabarang = $post["sisaBarang"];
+		return $this->db->update($this->_table, $this, array('kodebarang' => $post['kodeBarang']));
 	}
 
 	public function hapus($kodeBarang)
 	{
-		return $this->db->delete($this->_table, array("kodeBarang" => $kodeBarang));
+		return $this->db->delete($this->_table, array("kodebarang" => $kodeBarang));
 	}
 }

@@ -19,7 +19,7 @@ class Pemasok_model extends CI_Model
 
 	public function getById($kodeBarang)
 	{
-		return $this->db->get_where($this->_table, ["kodeBarang" => $kodeBarang])->row();
+		return $this->db->get_where($this->_table, ["kodebarang" => $kodeBarang])->row();
 	}
 
 	public function tambah()
@@ -31,11 +31,11 @@ class Pemasok_model extends CI_Model
 	public function ubah()
 	{
 		$post = $this->input->post();
-		return $this->db->update($this->_table, $this, array('kodeBarang' => $post['kodeBarang']));
+		return $this->db->update($this->_table, $this, array('kodebarang' => $post['kodeBarang']));
 	}
 
 	public function hapus($kodeBarang)
 	{
-		return $this->db->delete($this->_table, array("kodeBarang" => $kodeBarang));
+		return $this->db->delete($this->_table, array("kodebarang" => $kodeBarang));
 	}
 }

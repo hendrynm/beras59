@@ -30,8 +30,8 @@ class Pemasukan_model extends CI_Model
 	}
 
 	public function hari30(){
-		$this->db->where('tanggalPemasukan >=', date('Y-m-d', strtotime('-29 days')));
-		$this->db->where('tanggalPemasukan <=', date('Y-m-d'));
+		$this->db->where('tanggalpemasukan >=', date('Y-m-d', strtotime('-29 days')));
+		$this->db->where('tanggalpemasukan <=', date('Y-m-d'));
 		return $this->db->get($this->_table)->result();
 	}
 

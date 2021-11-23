@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class pengeluaran_model extends CI_Model
+class Pengeluaran_model extends CI_Model
 {
 	private $_table = "pengeluaran";
 	public $id_pengeluaran, $namapengeluaran, $tanggalpengeluaran, $jumlahpengeluaran;
@@ -29,8 +29,8 @@ class pengeluaran_model extends CI_Model
 	}
 
 	public function hari30(){
-		$this->db->where('tanggalPengeluaran >=', date('Y-m-d', strtotime('-29 days')));
-		$this->db->where('tanggalPengeluaran <=', date('Y-m-d'));
+		$this->db->where('tanggalpengeluaran >=', date('Y-m-d', strtotime('-29 days')));
+		$this->db->where('tanggalpengeluaran <=', date('Y-m-d'));
 		return $this->db->get($this->_table)->result();
 	}
 

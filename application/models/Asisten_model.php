@@ -24,12 +24,12 @@ class Asisten_model extends CI_Model
 	{
 		$post = $this->input->post();
 		$this->id_asisten = strtoupper($post["id_asisten"]);
-		$this->namaAsisten = $post["namaAsisten"];
-		$this->alamatAsisten = $post["alamatAsisten"];
-		$this->kontakAsisten = $post["kontakAsisten"];
-		$this->bagianAsisten = $post["bagianAsisten"];
-		$this->namaPengguna = $post["namaPengguna"];
-		$this->sandiPengguna = password_hash($post["sandiPengguna"],PASSWORD_DEFAULT);
+		$this->namaasisten = $post["namaAsisten"];
+		$this->alamatasisten = $post["alamatAsisten"];
+		$this->kontakasisten = $post["kontakAsisten"];
+		$this->bagianasisten = $post["bagianAsisten"];
+		$this->namapengguna = $post["namaPengguna"];
+		$this->sandipengguna = password_hash($post["sandiPengguna"],PASSWORD_DEFAULT);
 		return $this->db->insert($this->_table, $this);
 	}
 
@@ -37,12 +37,12 @@ class Asisten_model extends CI_Model
 	{
 		$post = $this->input->post();
 		$this->id_asisten = strtoupper($post["id_asisten"]);
-		$this->namaAsisten = $post["namaAsisten"];
-		$this->alamatAsisten = $post["alamatAsisten"];
-		$this->kontakAsisten = $post["kontakAsisten"];
-		$this->bagianAsisten = $post["bagianAsisten"];
-		$this->namaPengguna = $post["namaPengguna"];
-		$this->sandiPengguna = password_hash($post["sandiPengguna"],PASSWORD_DEFAULT);
+		$this->namaasisten = $post["namaAsisten"];
+		$this->alamatasisten = $post["alamatAsisten"];
+		$this->kontakasisten = $post["kontakAsisten"];
+		$this->bagianasisten = $post["bagianAsisten"];
+		$this->namapengguna = $post["namaPengguna"];
+		$this->sandipengguna = password_hash($post["sandiPengguna"],PASSWORD_DEFAULT);
 		return $this->db->update($this->_table, $this, array('id_asisten' => $post['id_asisten']));
 	}
 

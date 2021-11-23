@@ -8,13 +8,13 @@ class Login_model extends CI_Model
 	public function masuk(){
 		$post = $this->input->post();
 
-		$this->db->where('namaPengguna', $post["namaPengguna"]);
+		$this->db->where('namapengguna', $post["namaPengguna"]);
 		$pengguna = $this->db->get($this->_table)->row();
 
 		if($pengguna){
-			password_verify($post["sandiPengguna"], $pengguna->sandiPengguna);
-			$this->session->set_userdata(['namaAsisten' => $pengguna->namaAsisten]);
-			$this->session->set_userdata(['bagianAsisten' => $pengguna->bagianAsisten]);
+			password_verify($post["sandiPengguna"], $pengguna->sandipengguna);
+			$this->session->set_userdata(['namaAsisten' => $pengguna->namaasisten]);
+			$this->session->set_userdata(['bagianAsisten' => $pengguna->bagianasisten]);
 			$this->session->set_userdata(['user_logged' => $pengguna]);
 			return true;
 		} else{

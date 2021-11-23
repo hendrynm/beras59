@@ -30,8 +30,8 @@ class PesananKeluar_model extends CI_Model
 	}
 
 	public function hari30(){
-		$this->db->where('tanggalPesananKeluar >=', date('Y-m-d', strtotime('-29 days')));
-		$this->db->where('tanggalPesananKeluar <=', date('Y-m-d'));
+		$this->db->where('tanggalpesanankeluar >=', date('Y-m-d', strtotime('-29 days')));
+		$this->db->where('tanggalpesanankeluar <=', date('Y-m-d'));
 		return $this->db->get($this->_table)->result();
 	}
 
